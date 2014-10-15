@@ -27,6 +27,7 @@
                     <div class="commentText">
                         <?=$comment['comment_created']?>
                         <?=$comment['comment_author']?>
+                        <?=$comment['comment_time']?>
                         <p><?=$comment['comment_text']?></p>
                     </div>
                 </li>
