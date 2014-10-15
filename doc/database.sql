@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2014 at 12:19 PM
+-- Generation Time: Oct 15, 2014 at 01:19 PM
 -- Server version: 5.5.39
 -- PHP Version: 5.4.31
 
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
   `comment_text` text NOT NULL,
   `comment_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `post_id` int(10) unsigned NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `comment`
@@ -37,7 +37,8 @@ CREATE TABLE IF NOT EXISTS `comment` (
 INSERT INTO `comment` (`comment_id`, `comment_author`, `comment_text`, `comment_time`, `post_id`) VALUES
 (2, 'yolooo', 'jolooooooooo', '2014-09-15 09:48:50', 1),
 (3, 'Klaabu', 'jolo?', '2014-09-17 09:38:03', 1),
-(4, 'Klaabu', 'saaan', '2014-09-17 09:45:56', 1);
+(4, 'Klaabu', 'saaan', '2014-09-17 09:45:56', 1),
+(5, 'Klaabu', 'jolo', '2014-10-15 11:17:35', 1);
 
 -- --------------------------------------------------------
 
@@ -172,7 +173,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-MODIFY `comment_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `comment_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `post`
 --

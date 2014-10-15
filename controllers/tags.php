@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Maile
- * Date: 4.09.14
- * Time: 16:16
- */
 class tags extends Controller
 {
     function index()
@@ -22,4 +16,13 @@ class tags extends Controller
                             WHERE tag_name = '$tag_name'");
     }
 
+    function index_ajax(){
+        echo "\$_POST:<br>";
+        var_dump($_POST);
+    }
+
+    function index_post(){
+        echo "\$_POST:<br>";
+        var_dump($_POST);
+    }
 }
